@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "768837804694",
+    "firebase_url": "https://spikenotif-82d0b.firebaseio.com",
+    "project_id": "spikenotif-82d0b",
+    "storage_bucket": "spikenotif-82d0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768837804694:android:764d2cb7da3280eb",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768837804694-ffnc280hpadsj5osab3tdre971foqu7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuz10A3I2TQvV4P5USteRFw6QW4kEFvjc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "spikeNotif",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
