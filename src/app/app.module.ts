@@ -11,6 +11,7 @@ import { NotificationProvider } from '../providers/notification/notification';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { BackgroundMode } from '@ionic-native/background-mode';
 import { Firebase } from '@ionic-native/firebase';
+import { NotificacaoProvider } from '../providers/notificacao/notificacao';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { Firebase } from '@ionic-native/firebase';
     RemoteEventProvider,
     NotificationProvider,
     BackgroundMode,
-    Firebase
+    Firebase,
+    NotificacaoProvider
   ]
 })
 export class AppModule {}

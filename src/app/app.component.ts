@@ -23,12 +23,22 @@ export class MyApp {
   }
 
   firebaseSetup(){
-    this.fireBase.getToken().then(function(token) {
-      // save this server-side and use it to push notifications to this device
-      console.log(token);
-  }, function(error) {
-      console.error(error);
-  });
+    this.fireBase.getToken()
+    .then(token => console.log(`The token is ${token}`)) // save the token server-side and use it to push notifications to this device
+    .catch(error => console.error('Error getting token', error))
+  
+  this.fireBase.onTokenRefresh()
+    .subscribe((token: string) => console.log(`Got a new token ${token}`))
+
+  this.fireBase.onNotificationOpen().subscribe(
+    (abriu)=>{
+      console.log("usuario abriu notificação",abriu)
+    },
+    (err)=>{
+      console.log("erro ao abrir notificação", err);
+    }
+  )
+
   }
 }
 
