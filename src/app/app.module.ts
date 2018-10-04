@@ -8,8 +8,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RemoteEventProvider } from '../providers/remote-event/remote-event';
 import { NotificationProvider } from '../providers/notification/notification';
-import { LocalNotifications } from '@ionic-native/local-notifications';
-import { BackgroundMode } from '@ionic-native/background-mode';
 import { Firebase } from '@ionic-native/firebase';
 import { NotificacaoProvider } from '../providers/notificacao/notificacao';
 
@@ -30,11 +28,9 @@ import { NotificacaoProvider } from '../providers/notificacao/notificacao';
   providers: [
     StatusBar,
     SplashScreen,
-    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RemoteEventProvider,
     NotificationProvider,
-    BackgroundMode,
     Firebase,
     NotificacaoProvider
   ]

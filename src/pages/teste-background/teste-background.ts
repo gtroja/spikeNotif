@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { BackgroundMode } from '@ionic-native/background-mode';
 
 /**
  * Generated class for the TesteBackgroundPage page.
@@ -16,7 +15,7 @@ import { BackgroundMode } from '@ionic-native/background-mode';
 })
 export class TesteBackgroundPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public bg : BackgroundMode) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -27,16 +26,7 @@ export class TesteBackgroundPage {
   }
 
   goToBackGround(){
-    this.bg.enable()
-    this.bg.setDefaults({
-      title: "teste",
-      text: "teste de background",
-      icon: 'icon', // this will look for icon.png in platforms/android/res/drawable|mipmap
-      color: 'F14F4D', // hex format like 'F14F4D'
-      resume: true,
-      hidden: false,
-      bigText: false
-  })
+   
   }
 
 }

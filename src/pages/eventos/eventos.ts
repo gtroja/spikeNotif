@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Firebase } from '@ionic-native/firebase';
-import { NotificationProvider } from '../../providers/notification/notification';
-
 /**
  * Generated class for the EventosPage page.
  *
@@ -20,12 +18,11 @@ export class EventosPage {
   public texto : string = "";
   public token : string = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private noti: NotificationProvider, private  fireBase: Firebase ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private  fireBase: Firebase ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventosPage');
-    setTimeout(this.notifica(), 2000)
 
       this.fireBase.getToken()
       .then(token =>{this.texto += `recebi o token\n`; this.token = token}) // save the token server-side and use it to push notifications to this device
@@ -36,12 +33,5 @@ export class EventosPage {
     
   }
 
-  notifica(){
-    setTimeout(this.noti.notifica(), 10000)
-  }
-
-  ionViewDidLeave(){
-    this.noti.limpa()
-  }
 
 }
