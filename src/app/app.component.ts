@@ -24,7 +24,7 @@ export class MyApp {
 
   firebaseSetup(){
     this.fireBase.getToken()
-    .then(token => console.log(`The token is ${token}`)) // save the token server-side and use it to push notifications to this device
+    .then(token => console.log(`recebi token: "${token}"\n`)) // save the token server-side and use it to push notifications to this device
     .catch(error => console.error('Error getting token', error))
   
   this.fireBase.onTokenRefresh()
