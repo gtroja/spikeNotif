@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "679481192392",
+    "firebase_url": "https://spikenotif.firebaseio.com",
+    "project_id": "spikenotif",
+    "storage_bucket": "spikenotif.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679481192392:android:486f650750480666",
+        "android_client_info": {
+          "package_name": "io.troia.notif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679481192392-sas833ecbi5ath8rob9aor6sie5ng748.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuyCKf8VXee9JhBpvTk_2Xcvwl3ntcciU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

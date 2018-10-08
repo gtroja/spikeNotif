@@ -3,18 +3,15 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { Firebase } from '@ionic-native/firebase'
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { RemoteEventProvider } from '../providers/remote-event/remote-event';
-import { NotificationProvider } from '../providers/notification/notification';
-import { Firebase } from '@ionic-native/firebase';
-import { NotificacaoProvider } from '../providers/notificacao/notificacao';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -29,10 +26,7 @@ import { NotificacaoProvider } from '../providers/notificacao/notificacao';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RemoteEventProvider,
-    NotificationProvider,
-    Firebase,
-    NotificacaoProvider
+    Firebase
   ]
 })
 export class AppModule {}

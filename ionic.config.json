@@ -1,5 +1,5 @@
 {
-  "name": "spikeNotif",
+  "name": "iosNotif",
   "integrations": {
     "cordova": {}
   },

@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "679481192392",
-    "firebase_url": "https://spikenotif.firebaseio.com",
-    "project_id": "spikenotif",
-    "storage_bucket": "spikenotif.appspot.com"
+    "project_number": "1059206951939",
+    "firebase_url": "https://iosteste-397bc.firebaseio.com",
+    "project_id": "iosteste-397bc",
+    "storage_bucket": "iosteste-397bc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:679481192392:android:486f650750480666",
+        "mobilesdk_app_id": "1:1059206951939:android:02a35bd4d09695e7",
         "android_client_info": {
-          "package_name": "io.troia.notif"
+          "package_name": "io.ionic.iosNotif"
         }
       },
       "oauth_client": [
         {
-          "client_id": "679481192392-sas833ecbi5ath8rob9aor6sie5ng748.apps.googleusercontent.com",
+          "client_id": "1059206951939-bman4u54958g211muaour0c18lk9hp17.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBuyCKf8VXee9JhBpvTk_2Xcvwl3ntcciU"
+          "current_key": "AIzaSyCTAH6UYMD16OZ-XyLiiuyXantqaGnBOAU"
         }
       ],
       "services": {
