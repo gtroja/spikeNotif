@@ -31,6 +31,7 @@ export class HomePage {
   }
 
   fireBaseSetup(){
+    this.firebase.grantPermission()
     this.firebase.getToken().then(
       (ok)=>{
         this.say(`recebi ${ok}`)
